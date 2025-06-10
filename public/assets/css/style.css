@@ -1,23 +1,109 @@
 @font-face {
-    font-family: "Segoe UI";
-    src: url("../fonts/Segoe UI.ttf") format("truetype");
+    font-family: "Gabriola";
+    src: url("../css/fonts/Gabriola.ttf") format("truetype");
 }
 
 *{
     padding: 0;
     margin: 0;
+    font-family: Gabriola;
+    font-size: 18px;
 }
 .btn{
     display: inline-block;
     text-decoration: none;
-    border: 1px solid black;
-    border-radius: 5px;
-    padding: 10px;
-    color: black;
-    margin: 20px;
+    border: 1px solid #2D6033;
+    border-radius: 20px;
+    padding: 8px 12px 4px 12px;
+    color: white;
+    margin: 10px;
+    background-color: #2D6033;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #479750;
+    border: 1px solid #479750;
+}
+.bigger{
+    font-size: 1.3em;
 }
 .form{
+    background-color: #BBD9B2;
+    padding: 10px;
+    border: 1px solid #2D6033;
+    border-radius: 20px;
+    width: 40%;
+    margin: 0 auto;
+}
+.form div{
     display: flex;
     flex-direction: column;
-    gap: 5px;
+}
+header{
+    background-color: #BBD9B2;
+}
+nav{
+    display: flex;
+    gap: 20px;
+    padding: 10px 0 0 10px;
+}
+nav li{
+    margin: 20px;
+    list-style: none;
+}
+nav a {
+    font-size: 1.3em;
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: white;
+    padding: 10px;
+}
+nav a:hover {
+    color: #2D6033;
+    text-decoration: underline;
+    border: 2px solid #2D6033;
+}
+.products{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px 50px 10px 30px;
+    border-radius: 20px;
+}
+.link-edit{
+    text-decoration: none;
+    color: black;
+}
+.link-edit:hover{
+    color: #2D6033;
+}
+.products:hover{
+    border: 1px solid #2D6033;
+}
+select{
+    padding: 7px 0 7px 0;
+}
+.warning{
+    color: red;
+}
+h1{
+    margin-left: 10px;
+    font-size: 1.3em;
+    text-align: center;
+}
+.btn-material{
+    margin: 0 0 10px 10px;
+}
+.materials{
+    margin: 0 auto;
+    padding: 0 10px 0 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+    column-gap: 20px;
+}
+.materials td:last-child{
+    text-align: center;
 }
