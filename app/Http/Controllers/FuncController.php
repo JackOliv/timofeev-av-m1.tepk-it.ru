@@ -13,9 +13,6 @@ class FuncController extends Controller
         try {
             $need = ceil($param1 * $param2 * $productType->coefficient * $quantity / (1 + $materialType->defect));
             $total = $need - $quantity_storage;
-            if ($total < 0) {
-                $total = 0;
-            }
             return $total;
         } catch (\Exception $e) {
             return -1;
